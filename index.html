@@ -27,11 +27,11 @@
                     <a href="#">Gaurav</a>
                 </div>
                 <ul>
-                    <li><a id="home" href="#">Home</a></li>
-                    <li><a id="about" class="about section" href="#About_me">About</a></li>
-                    <li><a id="skills" href="#Skills_icons">SKills</a></li>
-                    <li><a id="projects" href="#project">Projects</a></li>
-                    <li><a id="contact" href="#">Contact</a></li>
+                    <li><a id="home" class="nav-link home" href="#home">Home</a></li>
+                    <li><a id="about" class ="nav-link.about" href="#About_me">About</a></li>
+                    <li><a id="skills" class="nav-link skills" href="#Skills_icons">SKills</a></li>
+                    <li><a id="projects" class="nav-link projects" href="#project">Projects</a></li>
+                    <li><a id="contact" class="nav-link contact" href="#">Contact</a></li>
                     <li><a class="nav-link resume" id="resume-button-1" href="https://drive.google.com/file/d/1-Nhtkl7bYoi5G7333vplub43AD0BS3eh/view?usp=share_link" target="_blank">Resume</a></li>
                 </ul>
             </div>
@@ -63,11 +63,11 @@
         </div>
     </div>
 
-<!-- <hr class="hr_line"> -->
+<hr class="hr_line">
 
     <h1 style="color: rgb(255, 183, 0); text-align: center;margin-top: 90px; margin-bottom: 100px;" id="About_me">ABOUT ME</h1>
 
-    <div id="introduction">
+    <div id="introduction" id="user-detail-intro">
         <div id="details">
             <div id="user-detail-name">
                 <h3 style="color: rgb(255, 183, 0);">I'm Gaurav Anand</h3>
@@ -75,7 +75,7 @@
     
             <div class="para" style="color: rgb(255, 183, 0);">Full Stack Developer</div>
     
-            <div class="user-detail-intro">
+            <div id="user-detail-intro">
                 <p style="color: rgb(255, 183, 0);">A result-oriented and self-motivated B.Tech graduate <br> looking for a
                     challenging career where I can <br> implement my coding knowledge so further, <br> enhance my skills.
                     Passionate about Backend and CSS.</p>
@@ -95,13 +95,13 @@
             </div>
         </div>
 
-        <div id="Profile_image">
-            <div class="home-img"><img src="./image/Gaurav1.jpg" alt="Gaurav Anand"></div>
+        <div id="Profile_image" >
+            <div class="home-img"><img class="home-img" src="./image/Gaurav1.jpg" alt="Gaurav Anand"></div>
         </div>
 
     </div>
 
-    <!-- <hr class="hr_line"> -->
+    <hr class="hr_line">
 
                                                 <!--  Skills -->
     // js html css nodejs express github git cyclic netlify mongodb 
@@ -109,9 +109,9 @@
     <h1 style="color: rgb(255, 183, 0); text-align: center;margin-top: 90px; margin-bottom: 100px;" id="Skills_icons">SKILLS</h1>
 
     <div id="skills_sets">
-        <div class="subcard">
-            <div class="sub-skills">
-                <div class="skills-card-img">
+        <div class="subcard" class="skills-card">
+            <div class="sub-skills" >
+                <div class="skills-card-img" > 
                     <img src="./image/html.png" alt="">
                 </div>
                 <div class="skills-card-name">
@@ -191,7 +191,7 @@
         </div>
     </div>
     
-    <!-- <hr class="hr_line"> -->
+    <hr class="hr_line">
 
     <h1 style="color: rgb(255, 183, 0); text-align: center;margin-top: 90px; margin-bottom: 100px;" id="Skills_icons">PROJECTS</h1>
 
@@ -260,7 +260,7 @@
         </div>
     </div>
 
-    <!-- <hr class="hr_line"> -->
+    <hr class="hr_line">
 
     <div class="react-activity-calendar">
         Loading the data just for you.
