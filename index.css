@@ -158,7 +158,7 @@ a{
   padding-left: 20px;
 }
 
-.sub-skills{
+#skilss_link .sub-skills{
   height: 100%;
   width: 230px;
   background-color: black;
@@ -166,14 +166,17 @@ a{
 
 .skills-card-img img{
   background-color: white;
-    width: 100%;
+    width: 68%;
     height: 15vw;
     object-fit: cover;
     border-radius: 30px;
 }
 
 .skills-card-name h3{
-text-align: center;
+  /* border: 2px solid blue; */
+  width: 100px;
+  text-align: center;
+  margin-left: 70px;
 }
 
 .subcard{
@@ -453,4 +456,21 @@ h2.f4.text-normal.mb-3 {
 text.ContributionCalendar-label {
     fill: rgb(255, 183, 0);
     font-size: 11px;
+}
+
+.social_contacts{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  font-size: x-large;
+  width: 90%;
+  margin: auto;
+  padding-right: 10px;
+}
+
+.whatsapp{
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 30px;
+  font-size: xx-large;
 }
