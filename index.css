@@ -13,6 +13,7 @@
 
 body{
   background-color: black;
+  width: fit-content;
 }
 
 nav{
@@ -287,6 +288,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar .width-full > .float-left {
     display: none;
+    
 }
 
 .calendar {
@@ -305,6 +307,7 @@ rect.ContributionCalendar-day[data-level='4'] {
   
     font-size: 10px;
     fill: rgb(255, 183, 0);
+    
 }
 
 .contrib-legend {
@@ -312,6 +315,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     text-align: right;
     padding: 0 14px 10px 0;
     display: inline-block;
+    
 }
 
 .contrib-legend .legend {
@@ -322,6 +326,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     position: relative;
     bottom: -1px;
     padding: 0;
+    
 }
 
 .contrib-legend .legend li {
@@ -329,6 +334,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     display: inline-block;
     width: 10px;
     height: 10px;
+    
 }
 
 .text-small {
@@ -473,4 +479,29 @@ text.ContributionCalendar-label {
   text-align: center;
   margin-top: 30px;
   font-size: xx-large;
+}
+
+@media screen and (min-width:360px) and (max-width:767px) {
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
+  }
+  .card{
+   flex-direction: column-reverse; 
+   align-items: center;
+  }
+  .card>#image{
+    margin-bottom: -160px;
+    align-items: center;
+  }
 }
