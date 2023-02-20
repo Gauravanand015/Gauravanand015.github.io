@@ -479,6 +479,9 @@ text.ContributionCalendar-label {
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
+   body {
+    overflow-x:hidden;
+  }
   .menu {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -518,7 +521,7 @@ text.ContributionCalendar-label {
   }
   .react-activity-calendar{
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
   }
   .streaks{
     display: flex;
@@ -527,6 +530,10 @@ text.ContributionCalendar-label {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x:hidden;
+  }
+
   .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -566,7 +573,7 @@ text.ContributionCalendar-label {
   }
   .react-activity-calendar{
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
   }
   .streaks{
     display: flex;
