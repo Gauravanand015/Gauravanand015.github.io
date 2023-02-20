@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   /* background-color: black; */
 }
-::selection{
+::selection {
   color: rgb(255, 183, 0);
-  background:rgb(255, 183, 0);
+  background: rgb(255, 183, 0);
 }
 
-body{
+body {
   background-color: black;
   width: fit-content;
 }
 
-nav{
-  position:fixed;
+nav {
+  position: fixed;
   background: rgb(255, 183, 0);
   width: 100%;
   padding: 10px 0;
-  z-index: 12;
+  /* z-index: 12; */
 }
-nav .menu{
+nav .menu {
   max-width: 1250px;
   margin: auto;
   display: flex;
@@ -31,23 +31,23 @@ nav .menu{
   justify-content: space-between;
   padding: 0 20px;
 }
-.menu .logo a{
+.menu .logo a {
   text-decoration: none;
   color: black;
   font-size: 35px;
   font-weight: 600;
 }
-.menu ul{
+.menu ul {
   display: inline-flex;
 }
-.menu ul li{
+.menu ul li {
   list-style: none;
   margin-left: 7px;
 }
-.menu ul li:first-child{
+.menu ul li:first-child {
   margin-left: 0px;
 }
-.menu ul li a{
+.menu ul li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -56,53 +56,57 @@ nav .menu{
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.menu ul li a:hover{
+.menu ul li a:hover {
   background: black;
-  color:rgb(255, 183, 0);
+  color: rgb(255, 183, 0);
 }
-/* .img{
-  background: url('img3.jpg')no-repeat;
+.img {
+  background: url("img3.jpg") no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
- } */
-/* .img::before{
-  content: '';
+}
+.img::before {
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0);
-}  */ 
+}
 
-.card{
+.card {
   /* border: 2px solid green; */
   display: flex;
   margin: auto;
   width: 80%;
+  justify-content: space-evenly;
+  /* margin-top: 50px; */
 }
 
-#sub{
+#sub {
   /* border: 2px solid blue; */
   margin-top: 180px;
   margin-left: 160px;
-  width: 400px;
+  width: 500px;
   padding-top: 35px;
+  /* padding: 20px; */
 }
 
-#image{
+#image {
   /* border: 2px solid red; */
   margin-left: 300px;
   margin-top: 180px;
+  width: auto;
 }
-#image>img{
+#image > img {
   /* border: 2px solid red; */
-  background-color: rgb(255, 183, 0)000;
+  background-color: rgb(255, 183, 0) 000;
   border-radius: 80%;
   width: 50%;
 }
-#aboutMe .btn{
+#aboutMe .btn {
   border: 2px solid rgb(255, 183, 0);
   margin-top: 20px;
   padding-left: 40px;
@@ -115,27 +119,27 @@ nav .menu{
   margin-right: 10px;
 }
 
-#aboutMe .btn:hover{
+#aboutMe .btn:hover {
   cursor: pointer;
-  box-shadow: rgb(255, 183, 0) 0px 7px 29px 0px;;
+  box-shadow: rgb(255, 183, 0) 0px 7px 29px 0px;
 }
 
-#link_button{
+#link_button {
   display: flex;
 }
 
-a{
-  color:rgb(255, 183, 0) ;
+a {
+  color: rgb(255, 183, 0);
   text-decoration: none;
 }
 
-.home-img{
+.home-img {
   /* border: 2px solid red; */
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
-#introduction{
+#introduction {
   display: flex;
   /* border: 2px solid red; */
   width: 80%;
@@ -143,47 +147,47 @@ a{
   justify-content: space-evenly;
 }
 
-.hr_line{
+.hr_line {
   margin-top: 100px;
   height: 3px;
-  background-color:rgb(255, 183, 0) ;
+  background-color: rgb(255, 183, 0);
   border: none;
 }
 
-#social{
+#social {
   margin-top: 5px;
   margin-bottom: 5px;
   display: flex;
 }
-#contact-linkedin{
+#contact-linkedin {
   padding-left: 20px;
 }
 
-#skilss_link .sub-skills{
+#skilss_link .sub-skills {
   height: 100%;
   width: 230px;
   background-color: black;
 }
 
-.skills-card-img img{
-  background-color: white;
-    width: 68%;
-    height: 15vw;
-    object-fit: cover;
-    border-radius: 30px;
+.skills-card-img img {
+  background-color: black;
+  width: 75%;
+  height: 35vh;
+  /* object-fit: cover; */
+  border-radius: 30px;
 }
 
-.skills-card-name h3{
+.skills-card-name h3 {
   /* border: 2px solid blue; */
   width: 100px;
   text-align: center;
   margin-left: 70px;
 }
 
-.subcard{
+.subcard {
   /* border: 2px solid blue; */
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: auto;
   justify-content: center;
@@ -191,43 +195,40 @@ a{
   gap: 30px;
 }
 
-#About_me{
-  /* border: 2px solid lightblue; */
-  padding-top:100px;
-}
-.netlify_img{
-  width:33px
+
+.netlify_img {
+  width: 33px;
 }
 
-.project_img img{
+.project_img img {
   width: 500px;
   height: 300px;
 }
 
-.link_div{
+.link_div {
   display: flex;
   /* border: 2px solid blue; */
   width: 80px;
   margin: auto;
 }
-.link_div div{
+.link_div div {
   margin-left: 10px;
 }
 
-.sub_project{
+.sub_project {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 80%;
   margin: auto;
   /* margin-top: 50px; */
 }
-.project-card{
+.project-card {
   text-align: center;
   align-items: center;
   margin-top: 30px;
 }
 
-#resume-button-2 .btn{
+#resume-button-2 .btn {
   border: 2px solid rgb(255, 183, 0);
   margin-top: 20px;
   padding-left: 40px;
@@ -239,20 +240,20 @@ a{
   background-color: rgb(255, 183, 0);
 }
 
-#resume-button-2 .btn:hover{
+#resume-button-2 .btn:hover {
   cursor: pointer;
-  box-shadow: rgb(255, 183, 0) 0px 7px 29px 0px;;
+  box-shadow: rgb(255, 183, 0) 0px 7px 29px 0px;
 }
-.react-activity-calendar{
+.react-activity-calendar {
   border: 2px solid rgb(255, 183, 0);
   width: 80%;
   margin: auto;
   margin-top: 40px;
   padding: 20px;
-  color:rgb(255, 183, 0) ;
+  color: rgb(255, 183, 0);
 }
 
-.streaks{
+.streaks {
   margin-top: 40px;
   display: flex;
   justify-content: space-around;
@@ -266,205 +267,201 @@ a{
   --color-calendar-graph-day-L4-bg: #0a4208;
 }
 
-rect.ContributionCalendar-day[data-level='0'] {
-    fill: var(--color-calendar-graph-day-bg);
+rect.ContributionCalendar-day[data-level="0"] {
+  fill: var(--color-calendar-graph-day-bg);
 }
 
-rect.ContributionCalendar-day[data-level='1'] {
-    fill: var(--color-calendar-graph-day-L1-bg);
+rect.ContributionCalendar-day[data-level="1"] {
+  fill: var(--color-calendar-graph-day-L1-bg);
 }
 
-rect.ContributionCalendar-day[data-level='2'] {
-    fill: var(--color-calendar-graph-day-L2-bg);
+rect.ContributionCalendar-day[data-level="2"] {
+  fill: var(--color-calendar-graph-day-L2-bg);
 }
 
-rect.ContributionCalendar-day[data-level='3'] {
-    fill: var(--color-calendar-graph-day-L3-bg);
+rect.ContributionCalendar-day[data-level="3"] {
+  fill: var(--color-calendar-graph-day-L3-bg);
 }
 
-rect.ContributionCalendar-day[data-level='4'] {
-    fill: var(--color-calendar-graph-day-L4-bg);
+rect.ContributionCalendar-day[data-level="4"] {
+  fill: var(--color-calendar-graph-day-L4-bg);
 }
 
 .calendar .width-full > .float-left {
-    display: none;
-    
+  display: none;
 }
 
 .calendar {
   
-    width: 750px;
-    font-family: Helvetica, arial;
-    border: 1px solid rgb(255, 183, 0);
-    border-radius: 3px;
-    min-height: 243px;
-    text-align: center;
-    margin: 0 auto;
+  width: 750px;
+  font-family: Helvetica, arial;
+  border: 1px solid rgb(255, 183, 0);
+  border-radius: 3px;
+  min-height: 243px;
+  text-align: center;
+  margin: 0 auto;
+  
 }
 
 .calendar-graph text.wday,
 .calendar-graph text.month {
   
-    font-size: 10px;
-    fill: rgb(255, 183, 0);
-    
+  font-size: 10px;
+  fill: rgb(255, 183, 0);
 }
 
 .contrib-legend {
+  text-align: right;
+  padding: 0 14px 10px 0;
+  display: inline-block;
   
-    text-align: right;
-    padding: 0 14px 10px 0;
-    display: inline-block;
-    
 }
 
 .contrib-legend .legend {
-  
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px;
-    position: relative;
-    bottom: -1px;
-    padding: 0;
-    
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+  position: relative;
+  bottom: -1px;
+  padding: 0;
 }
 
 .contrib-legend .legend li {
-  
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    
+  display: inline-block;
+  width: 10px;
+  height: 10px;
 }
 
 .text-small {
-    font-size: 12px;
-    color: rgb(255, 183, 0);
+  font-size: 12px;
+  color: rgb(255, 183, 0);
 }
 
 .calendar-graph {
-    padding: 5px 0 0;
-    height: 126px;
-    text-align: center;
+  padding: 5px 0 0;
+  height: 126px;
+  text-align: center;
+  
 }
 
 .contrib-column {
-    padding: 15px 0;
-    text-align: center;
-    border-left: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    font-size: 11px;
+  padding: 15px 0;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  font-size: 11px;
+  
 }
 
 .contrib-column-first {
-    border-left: 0;
+  border-left: 0;
 }
 
 .table-column {
-    display: table-cell;
-    width: 1%;
-    padding-right: 10px;
-    padding-left: 10px;
-    vertical-align: top;
+  display: table-cell;
+  width: 1%;
+  padding-right: 10px;
+  padding-left: 10px;
+  vertical-align: top;
 }
 
 .contrib-number {
-    font-weight: 300;
-    line-height: 1.3em;
-    font-size: 24px;
-    display: block;
-    color: rgb(255, 183, 0);
+  font-weight: 300;
+  line-height: 1.3em;
+  font-size: 24px;
+  display: block;
+  color: rgb(255, 183, 0);
 }
 
 .calendar img.spinner {
-    width: 70px;
-    margin-top: 50px;
-    min-height: 70px;
+  width: 70px;
+  margin-top: 50px;
+  min-height: 70px;
 }
 
 .monospace {
-    text-align: center;
-    color: rgb(255, 183, 0);
-    font-family: monospace;
+  text-align: center;
+  color: rgb(255, 183, 0);
+  font-family: monospace;
 }
 
 .monospace a {
-    color: rgb(255, 183, 0);
-    text-decoration: none;
+  color: rgb(255, 183, 0);
+  text-decoration: none;
 }
 
 .contrib-footer {
-    font-size: 11px;
-    padding: 0 10px 12px;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-    height: 26px;
+  font-size: 11px;
+  padding: 0 10px 12px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  height: 26px;
 }
 
 .left.text-muted {
-    float: left;
-    margin-left: 9px;
-    color: rgb(255, 183, 0);
+  float: left;
+  margin-left: 9px;
+  color: rgb(255, 183, 0);
 }
 .left.text-muted a {
-    color: rgb(255, 183, 0);
-    text-decoration: none;
+  color: rgb(255, 183, 0);
+  text-decoration: none;
 }
 .left.text-muted a:hover,
 .monospace a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h2.f4.text-normal.mb-3 {
-    display: none;
+  display: none;
 }
 
 .float-left.text-gray {
-    float: left;
+  float: left;
 }
-#user-activity-overview{
-    display:none;
+#user-activity-overview {
+  display: none;
 }
 
 .day-tooltip {
-    white-space: nowrap;
-    position: absolute;
-    z-index: 99999;
-    padding: 10px;
-    font-size: 12px;
-    color:rgb(255, 183, 0);
-    text-align: center;
-    background: rgb(255, 183, 0);
-    border-radius: 3px;
-    display: none;
-    pointer-events: none;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 99999;
+  padding: 10px;
+  font-size: 12px;
+  color: rgb(255, 183, 0);
+  text-align: center;
+  background: rgb(255, 183, 0);
+  border-radius: 3px;
+  display: none;
+  pointer-events: none;
 }
 .day-tooltip strong {
-    color: rgb(255, 183, 0);
+  color: rgb(255, 183, 0);
 }
 .day-tooltip.is-visible {
-    display: block;
+  display: block;
 }
 .day-tooltip:after {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    box-sizing: border-box;
-    margin: 0 0 0 -5px;
-    content: " ";
-    border: 5px solid transparent;
-    border-top-color: rgb(255, 183, 0)
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  box-sizing: border-box;
+  margin: 0 0 0 -5px;
+  content: " ";
+  border: 5px solid transparent;
+  border-top-color: rgb(255, 183, 0);
 }
 
 text.ContributionCalendar-label {
-    fill: rgb(255, 183, 0);
-    font-size: 11px;
+  fill: rgb(255, 183, 0);
+  font-size: 11px;
 }
 
-.social_contacts{
+.social_contacts {
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-evenly;
@@ -474,34 +471,105 @@ text.ContributionCalendar-label {
   padding-right: 10px;
 }
 
-.whatsapp{
+.whatsapp {
   /* border: 2px solid red; */
   text-align: center;
   margin-top: 30px;
   font-size: xx-large;
 }
 
-@media screen and (min-width:360px) and (max-width:767px) {
-  .menu{
+@media (min-width: 360px) and (max-width: 767px) {
+  .menu {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 2fr);
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .card > #image {
+    margin-bottom: -160px;
+    align-items: center;
+  }
+  #introduction {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  /* #introduction p{
+    text-align: justify;
+  } */
+  #social{
+    margin: auto;
+    justify-content: center;
+  }
+
+  .subcard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+  }
+  .sub_project{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }
+  .react-activity-calendar{
+    width: 80%;
+    margin: auto;
+  }
+  .streaks{
+    display: flex;
     flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  .menu{
+  .menu {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: column;
   }
-  .card{
-   flex-direction: column-reverse; 
-   align-items: center;
+  .card {
+    flex-direction: column-reverse;
+    align-items: center;
   }
-  .card>#image{
+  .card > #image {
     margin-bottom: -160px;
     align-items: center;
+  }
+  #introduction {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  /* #introduction p{
+    text-align: justify;
+  } */
+  #social{
+    margin: auto;
+    justify-content: center;
+    /* border: 2px solid red; */
+  }
+  .subcard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+  }
+  .sub_project{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }
+  .react-activity-calendar{
+    width: 80%;
+    margin: auto;
+  }
+  .streaks{
+    display: flex;
+    flex-direction: column;
   }
 }
